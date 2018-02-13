@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .2s;
+}
+
+body {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 480px;
+    margin: 0 auto;
+    background: black;
+    background: radial-gradient(circle, #585858, #000000) no-repeat;
+    color: #fffffe;
+}
+
+.nav-bar {
+    background: #000000;
+    padding: 20px 0 0 150px;
+    overflow: hidden;    
+}
+
+.logo {
+    width: 50%;
+    float: left;
+}
+
+.nav {
+    width: 50%;
+    float: left;
+}
+
+.nav ul {    
+    display: block;
+    list-style: none;
+    border-bottom: 1px solid #f6cb02;
+}
+
+.nav li {
+    display: inline-block;
+    width: 18%;
+    text-align: left;
+    padding: 15px 0 15px;
+}
+
+.nav li:first-child {
+    padding-left: 0;
+}
+
+.nav li.phone {    
+    text-align: center;
+}
+
+.nav .selected a {
+    padding: 15px 0 12px ;
+    border-bottom: 3px solid #f6cb02;
+}
+.nav .selected a {
+    color: #f6cb02;
+}
+
+.nav a:hover {
+    padding: 15px 0 12px 0;
+    border-bottom: 3px solid #f6cb02;
+}
+
+.nav li:hover a {
+    color: #f6cb02;
+}
+
+.nav li:first-child:hover {
+    padding-left: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    line-height: 0.875rem;
+    color: #fffffe;
+}
+
+.main {    
+    margin: 0 auto;
+    padding-top: 100px;
+    overflow: hidden;
+    background: url('images/map-bg.png') no-repeat center top;
+    background-size: cover;
+}
+
+.side-bar {
+    transform: rotate(-90deg);
+    width: 565px;
+    position: absolute;
+    left: -100px;
+    top: 430px;
+}
+
+.side-bar ul {
+    list-style: none;
+}
+
+.side-bar li {
+    background: #f6cb02;
+    padding: 0 0 5px 5px;
+    margin-bottom: 40px;    
+}
+
+.side-bar a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'futura-pt-bold', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    position: relative;
+    top: -4px;
+}
+
+.block {
+    width: 75%;
+    margin-left: 17%;
+    margin-bottom: 150px;
+    background: url('images/block-bg.png') no-repeat right;
+    background-size: contain;
+}
+
+.section {
+    width: 65%;
+    background: #000000;
+    box-shadow: 20px 2px 25px #000000b0;
+}
+
+.h1-like {
+    font-family: 'futura-pt-bold', sans-serif;
+    font-weight: 900;
+    font-size: 937.5%;
+    line-height: 150px;
+    letter-spacing: -4px;
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0.3;
+    position: relative;
+    top: -25px;
+}
+
+.services {
+    padding: 20px 100px 50px;
+}
+
+.category {
+    margin-bottom: 42px;
+    position: relative;
+}
+
+.category a {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: 0.5;
+    font-family: 'futura-pt-bold', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+    text-transform: uppercase;
+        
+}
+
+.cat1:hover::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    width: 85%;
+    border-bottom: 5px solid #f6cb02;
+}
+
+.cat2:hover::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    width: 60%;
+    border-bottom: 5px solid #f6cb02;
+}
+
+.cat3:hover::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    width: 63%;
+    border-bottom: 5px solid #f6cb02;
+}
+
+.cat4:hover::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    width: 78%;
+    border-bottom: 5px solid #f6cb02;
+}
+
+.cat5:hover::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    width: 66%;
+    border-bottom: 5px solid #f6cb02;
+}
+
+.cat6:hover::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: -100px;
+    width: 35%;
+    border-bottom: 5px solid #f6cb02;
+}
+
+.descr {
+    display: none;
+    position: absolute;
+    width: 50%;
+    right: -542px;
+    top: 0;
+    font-size: 17px;
+    line-height: 20px;
+    font-family:  'futura-pt-bold', sans-serif;
+}
+
+.descr::before {
+    content: '';
+    position: absolute;
+    top: 14px;
+    left: -77px;
+    width: 15%;
+    border-bottom: 5px solid #f6cb02;
+}
+
+
+.category:hover .descr {
+    display: block;
+}
+
+
+@media screen and (max-width: 1890px) {
+    .h1-like {
+        font-size: 7.5rem;
+        line-height: 7.5rem;
+        top: -21px;
+        letter-spacing: normal;
+    }
+}
+
+
+@media screen and (max-width: 1600px) {
+    .nav-bar {
+        padding: 20px 0 0 20px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    .nav {
+        width: 70%;
+    }
+
+    .nav a, .phone {
+        font-size: 1.2rem;
+    }
+
+    .main {
+        padding-top: 60px;
+    }
+
+    .h1-like {
+        font-size: 7.5rem;
+        line-height: 7.5rem;
+        top: -21px;
+        letter-spacing: normal;
+    }
+
+    .services {
+        padding: 50px 30px;
+    }
+
+    .category {
+        margin-bottom: 30px;
+    }
+
+    .category a {
+        font-size: 1.65rem;
+        line-height: 1.85rem;
+    }
+
+    .cat1:hover::after {
+        right: -32px;
+        width: 82%;
+    }
+
+    .cat2:hover::after, .cat3:hover::after, .cat5:hover::after, .cat6:hover::after {
+        right: -32px;        
+    }
+
+    .cat4:hover::after {
+        right: -32px;
+        width: 75%;
+    }
+
+    .descr {
+        width: 45%;
+        right: -432px;
+    }
+
+    .side-bar {
+        width: 500px;
+        top: 325px;
+    }
+}
+
+@media screen and (max-width: 1560px) {
+    .h1-like {
+        font-size: 6.5rem;
+        line-height: 6.5rem;
+        top: -18px;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .h1-like {
+        font-size: 5.7rem;
+        line-height: 5.7rem;
+        top: -14px;       
+    }
+
+    .side-bar li {
+        margin-bottom: 30px;
+    }
+
+    .side-bar a {
+        font-size: 26px;
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 1224px) {
+    .h1-like {
+        font-size: 5.2rem;
+        line-height: 5.2rem;
+        top: -13px;       
+    }
+
+    .side-bar {
+        left: -130px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .nav-bar {
+        padding: 20px 0 0 20px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+
+    .nav {
+        width: 70%;
+    }
+
+    .nav li {
+        padding-bottom: 13px;
+    }
+    .nav a {
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .main {
+        padding-top: 60px;
+        margin-bottom: 500px;
+    }
+
+    .block {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .h1-like {
+        font-size: 6.75rem;
+        line-height: 6.75rem;
+        top: -18px;
+    }
+
+    .services {
+        padding: 50px 30px;
+        overflow: hidden;
+    }
+
+    .category {
+        margin-bottom: 30px;
+    }
+
+    .category a {
+        font-size: 1.65rem;
+        line-height: 1.85rem;
+    }
+
+    .side-bar {
+        transform: none;
+        left: 100px;
+        top: 730px;
+    }
+
+    .side-bar li {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .logo img {
+        width: 60%;
+    }
+
+    .h1-like {
+        font-size: 5.75rem;
+        line-height: 5.75rem;
+        top: -16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .logo img {
+        width: 80%;
+    }
+
+    .nav li.phone {
+        font-size: 1rem;
+    }
+
+    .h1-like {
+        font-size: 4.75rem;
+        line-height: 4.75rem;
+        top: -14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 100%;
+    }
+
+    .nav li {
+        display: none;
+    }
+
+    .nav li.phone {
+        display: block;
+        width: 50%;
+        font-size: 1.8rem;
+        text-align: right;
+        float: right;
+    }
+
+    .h1-like {
+        font-size: 3.75rem;
+        line-height: 3.75rem;
+        top: -10px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav li.phone {
+        width: 75%;
+    }
+
+    .h1-like {
+        font-size: 4.5rem;
+        line-height: 4.5rem;
+        top: 230px;
+        left: -190px;
+        transform: rotate(-90deg);
+    }
+
+    .section {
+        width: 100%;        
+    }
+
+    .services {
+        padding: 50px 0 30px 160px;
+    }
+
+    .side-bar {
+        left: 0;
+        top: 760px;
+        width: 480px;
+    }
+}
